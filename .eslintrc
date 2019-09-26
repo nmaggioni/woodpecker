@@ -1,0 +1,37 @@
+{
+    "extends": "@hapi/eslint-config-hapi",
+    "parserOptions": {
+        "ecmaVersion": 9
+    },
+    "rules": {
+        "hapi/no-arrowception": [
+            0
+        ],
+        "indent": ["warn",
+            2,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "space-before-function-paren": ["error", {
+            "anonymous": "never",
+            "named": "never",
+            "asyncArrow": "always"
+        }],
+        "padding-line-between-statements": "off",
+        "brace-style": ["error", "1tbs"],
+        "comma-dangle": ["error", {
+            "arrays": "always-multiline",
+            "objects": "always-multiline",
+            "functions": "always-multiline"
+        }],
+        "curly": ["error", "multi-line"],
+        "object-shorthand": ["error", "consistent-as-needed"],
+        "@hapi/hapi/scope-start": "off",
+        "@hapi/hapi/capitalize-modules": "off",
+        "no-unused-vars": ["warn", {
+            "varsIgnorePattern": "_",
+            "argsIgnorePattern": "_"
+        }]
+    }
+}
